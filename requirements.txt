@@ -1,7 +1,6 @@
 Flask
 flask_login
 flask_sqlalchemy
-os
 json
 flask
 time
