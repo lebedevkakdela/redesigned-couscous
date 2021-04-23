@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <title>Одноглазый Питон</title>
+    <style>
+        #logo {
+            height: 150px;
+            width: 150px;
+            margin: 30px 20px 20px;
+        }
+
+        #pick {
+            position: absolute;
+            top: 178px;
+            left: 40px
+        }
+
+        .iconBox {
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .glyphicon {
+            border: 1px solid #ccc;
+            width: 100%;
+            display: inline-block;
+            padding: 0.3125rem;
+            margin-right: 110px;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+            color: #ffffff;
+            text-decoration: none; /* убирать подчёркивание у ссылок */
+            user-select: none; /* убирать выделение текста */
+            outline: none;
+        }
+
+        div.glyphicon:hover {
+            background: #FFFFFF;
+            color: #343A40;
+        }
+
+        /* при наведении курсора мышки */
+        div.glyphicon:active {
+            background: #FFC000;
+        }
+
+        div.newsbox {
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            display: compact;
+            justify-content: space-between
+        }
+
+        div.news {
+            border: 1px solid #cccccc;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+            color: #343A40;
+            text-decoration: none; /* убирать подчёркивание у ссылок */
+            outline: none
+        }
+
+
+        #rest {
+            position: absolute;
+            top: 3px;
+            left: 70px
+        }
+        .pic {width: 100%; padding: 0}
+        #mainpic {width: 90%;}
+
+        /* при нажатии */
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" id="rest">Ресторан</a>
+        <a href="/"><img src="static/req/logo.png" id="logo" alt="Логотип"></a>
+        <a class="navbar-brand" id="pick">Лучший выбор!</a>
+        <div class="iconBox" align='center'>
+            <a href="/login">
+                <div class="glyphicon" aria-hidden="true">Войти</div>
+            </a>
+            <a href="/menu">
+                <div class="glyphicon" aria-hidden="true">Меню</div>
+            </a>
+            <a href="/position">
+                <div class="glyphicon glyphicon-hdd" aria-hidden="true">Расположение</div>
+            </a>
+            <a href="/events">
+                <div class="glyphicon glyphicon-tasks" aria-hidden="true">Актуальное</div>
+            </a>
+            <a href="/about">
+                <div class="glyphicon glyphicon-saved" aria-hidden="true">О нас</div>
+            </a>
+        </div>
+
+
+    </nav>
+</header>
+<!-- Begin page content -->
+<main role="main" class="container">
+    {% block content %}{% endblock %}
+</main>
+
+</body>
+</html>
