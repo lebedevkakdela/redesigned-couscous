@@ -1,5 +1,4 @@
 Flask
-werkzeug.security
 flask_login
 flask_sqlalchemy
 os
