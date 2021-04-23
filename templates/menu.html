@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for i in main %}
+        <ul>
+            <li>Блюдо: {{i.Dish }} Цена: {{i.Price }}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
