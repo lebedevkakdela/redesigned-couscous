@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="newsbox" >
+    {% for item in news['news'] %}
+        <div class="news">
+            <img class="pic" src={{item["pic"]}}>
+            <h2>{{item["title"]}}</h2>
+            <p>{{item["content"]}}</p>
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}
